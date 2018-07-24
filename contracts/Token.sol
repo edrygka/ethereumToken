@@ -11,9 +11,8 @@ contract Token is StandardToken {
  
   uint256 public INITIAL_SUPPLY = 100000000 * 1 ether;
  
-  function SimpleCoinToken() public {
+  constructor() public {
     totalSupply = INITIAL_SUPPLY;
     balances[msg.sender] = INITIAL_SUPPLY;
   }
-    
 }

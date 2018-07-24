@@ -33,7 +33,7 @@ contract Crowdsale is Ownable {
 
   function createTokens() public saleIsOn payable {
     multisig.transfer(msg.value);
-    uint tokens = rate.mul(msg.value).div(1 ether);
+    uint tokens = rate.mul(msg.value).div(1 ether); 
 
     // calculate price discount if paid earlier
     uint bonusTokens = 0;
