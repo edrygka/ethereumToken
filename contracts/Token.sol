@@ -239,5 +239,4 @@ contract TestToken is MintableToken, BurnableToken { // token is burnable in com
     string public constant name = "My Test Token";
     string public constant symbol = "MTT";
     uint8 public  constant decimals = 18;
-    
 }
